@@ -7,9 +7,10 @@
     <title>Entre em contato </title>
 </head>
 <body>
+<a href= "contato.php"> Pagina de contato </a>
     <?php
     echo "<h1>Pagina de contato do site </h1>";
-    ?php
+    ?>
     
 </body>
 </html>

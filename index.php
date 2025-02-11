@@ -7,6 +7,7 @@
     <title>PROJETO PWIIB </title>
 </head>
 <body>
+    <a href= "contato.php"> Pagina de inicial  </a>
     <?php
     echo"<h1>Titulo do Projeto PWBII B</h1>";
     ?>
