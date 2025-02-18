@@ -6,6 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PROJETO PWIIB </title>
     <link href="bootstrap.min.css" rel="stylesheet" >
+    <style>
+      .row{
+        border:2px solid red;
+        padding:5px
+      }
+      .row> div {
+        border:2px solid blue;
+        padding:50px 0;
+        text-align:center
+      }
+      </style>
 </head>
 <body>
 <table class="table">
@@ -89,19 +100,40 @@
     </div>
   </div>
 </nav>
-<div class="card" style="width: 18rem;">
-  <div class="card-header">
+
+<h1> Sistema de Layout</h1>
     Featured
-  </div>
-  <ul class="list-group list-group-flush">
-    <li class="list-group-item">An item</li>
-    <li class="list-group-item">A second item</li>
-    <li class="list-group-item">A third item</li>
-  </ul>
+  
 </div>
-<div class="alert alert-success" role="alert">
-  A simple success alert—check it out!
+    
+    <div class="row">
+      <div class="col-6">
+        Cadastrar
+    </div>
+    <div class="col-6">
+      Pesquisar
+    </div>
+    <div class="row">
+  
+        <div class="col-4">
+        <div class="form-floating mb-3">
+  <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+  <label for="floatingInput">Email cadastrado</label>
 </div>
+<div class="form-floating">
+  <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+  <label for="floatingPassword">Password</label>
+</div>
+          
+    </div>
+    <div class="col-4">
+    </div>
+    <div class="col-4">
+    </div>
+      
+
+
+    
     <a href= "contato.php"> Pagina de inicial  </a>
     <?php
     echo"<h1>Titulo do Projeto PWBII B</h1>";
