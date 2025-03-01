@@ -47,6 +47,87 @@
   </div>
 </nav>
 <div class="container">
+  <H1></h1>
+  </p>
+  <h2> Estrutura  de decisão é composta por um teste booleano.</h2>
+    esse teste verifica uma condição se verdadeiro  faça alguma ou se falso outra.
+    <pre>
+      $numero=2:
+      if($numero ==1)
+
+      {
+        echo" aqui significa $numero igual a 1";
+      }else{
+        echo "Aqui significa $numero diferente de 1";
+      }
+      <pre>
+        
+        <?php
+         $numero=2;
+         if($numero ==1)
+   
+         {
+           echo " Aqui significa $numero igual a 1";
+         }else
+         {
+
+           echo "Aqui significa $numero diferente de 1";
+           
+         }
+         ?>
+         </p>
+         <H2>
+           ESTRUTURA DE DECISÃO ENCADEADA </h2>
+           São varios testes um segudo do outro ate algum teste verdadeiro ser encontrado.
+           Caso não encontrar nenhum positivo o else é executado.
+           Ao encontrar um teste positivo todos os subsequnentes  não serão executados 
+            <pre>
+              $nome = "Fernando" ;
+              if($nome =="joão") {
+
+              }else if($nome =="maria");{
+
+              }else if($nome =="Fernando");{
+                
+
+              }
+
+              else if($nome=="pedro");{
+
+              }else
+              echo "nenhum nome é igual ao conteudo  da variavel";
+            }
+          </pre>
+
+          <he>Varios teste em um 1 if<h2>
+            Em uma estrutura de decisão unica  eu consigo realizar dois ou mais testes.
+            Nesse caso eu preciso utilizar os  conectivos AND ou OR (E OU OU).
+            <h3> Conectivo E (AND)</h3>
+            No exemplo abaixo eu necessito que todas as condiçoes  resultem em verdadeiro.
+            <pre>
+              <?php
+              $numero2 = 35;
+              //   true     e  true
+              if($numero2 > 10 && $numero2 < 50){
+                echo "$numero2 esta entre 10 e 50";
+              } 
+                //False        TRUE
+                if($numero2 > 36 && $numero2 < 50 && $numero2 == 35)
+                {
+                  // Esse codigo não sera executado
+                }else{
+                  echo "numero 2 não esta entre 36 e 50 ";
+                }
+            
+                ?>
+              </pre>
+                <h3>Conectivo OU (or) </h3>
+                <p>
+                O conectivo ou teste todas as condiçoes e executa o codigo se  apenas uma das comdiçoes for verdadeiro.Caso  for verdadeiro o else é executado .
+
+              
+                  
+
 <h1>variavel</h1>
 <h3>declaraçao de variaveis</h3>
 <p>
@@ -82,15 +163,40 @@
     ?>
         <h1>Constantes</h1>
 <p>
-              Em PHP, constantes são valores fixos que não podem ser alterados durante a execução do programa. Elas são declaradas com a palavra-chave define() ou usando a palavra-chave const (para constantes definidas em classes ou escopos específicos).
+              Em PHP, constantes são valores fixos que não podem ser alterados durante a execução do programa. Elas são declaradas com a palavra-chave define() 
+              ou usando a palavra-chave const (para constantes definidas em classes ou escopos específicos).
 
-      A principal diferença entre constantes e variáveis é que, enquanto as variáveis podem ter seu valor alterado, as constantes mantêm o mesmo valor durante todo o script. Constantes podem ser usadas em qualquer lugar do código e não precisam do símbolo de cifrão ($).
+      A principal diferença entre constantes e variáveis é que, enquanto as variáveis podem ter seu valor alterado, as constantes
+       mantêm o mesmo valor durante todo o script. Constantes podem ser usadas em qualquer lugar do código e não precisam do símbolo de cifrão ($).
 
      <br />
       Exemplo de declaração de constante:
 </p>
 
     <pre>
+      $telefone ="1498576397";
+      if($telefone ==" 1498767864 || $telefone =="1697685673")
+      {
+        ECHO "Aqui um dois telefones é igual a variavel";
+      }
+    </pre>
+    Quando temos varias condiçoes apenas uma é necessario ao usar o conectivo OI representado  
+    por dois PIPE (Tecla que fica do lado do Z)||
+    </P>
+
+    <h2>Exercicios</h2>
+    <p>
+      Crie uma  variavel idade preencha com um valor e 
+      escreva na tela se ela  pode ou não entrar em um evento
+      considerando as seguintes regras:
+      <ul>
+        <li>Menor e 18 anos: Não pode entrar.</li>
+        <li> Maior ou igual a 18 anos e menor que 60: Pode  entrar.</li>
+        <li> Maior ou igual a 60: Entraria gratuita.</li>
+        <ul>
+    </p>
+    </div>
+      <
  
      define("PI", 3.14);  // Usando define()
      echo PI;  // Imprime 3.14
