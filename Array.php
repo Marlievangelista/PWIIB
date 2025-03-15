@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link href="bootstrap.min.css" rel="stylesheet" />
+    <link href="estilo.css" rel="stylesheet" />
 </head>
 <body>
 <nav class="navbar navbar-expand-lg bg-dark" data-bs-theme="dark">
@@ -122,10 +124,10 @@ $b = array( rand(1,15), rand(1,15), rand(1,15), rand(1,15), rand(1,15) );
  </table>
  <h1>Sorteio</h1>
  <?php
-   <$ Sorteio= array(12,7,3,9,5,2,4,1,11,8,13,6,14,15,10);
-    for($=0; $i < 15 : $i++ )
+   $Sorteio= array(12,7,3,9,5,2,4,1,11,8,13,6,14,15,10);
+    for($i=0; $i < 15 ; $i++ )
     {
-          echo"<h2>Rodada " .($i+1)."numero sorteado é : $ Sorteio[$i]</h2>";
+          echo"<h2>Rodada " .($i+1)."numero sorteado é : $Sorteio[$i]</h2>";
 
     }
        ?>
