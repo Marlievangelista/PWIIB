@@ -21,7 +21,15 @@ echo "<br>";
 
         if (isset($_GET['nome'])) {
             $nome = htmlspecialchars($_GET['nome']);
-            echo "<h2>Olá, $nome!</h2>";
+            echo "<h2>Olá, $Marli!</h2>";
+
+            echo"<br>";
+
+
+        
+
+           
+?>
         }
     ?>
  <br>
