@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -7,39 +8,12 @@
     <title>Projeto PWII B</title>
     <link href="bootstrap.min.css" rel="stylesheet" />
     <link href="estilo.css" rel="stylesheet" />
-    <style>
- 
-.btn-color {
-    background-color: #2E8B57;
-    color: #fff;
-}
- 
-.profile-image-pic {
-    height: 200px;
-    width: 200px;
-    object-fit: cover;
-}
-body {
-    background-color: #98FB98;
-}
- 
- 
-.cardbody-color {
-    /*background-color: #ebf2fa;*/
-    background-color:#7B68EE;
-
-}
- 
-a {
-    text-decoration: none;
-}
-        </style>
 </head>
 <body>
 <nav class="navbar navbar-expand-lg bg-dark" data-bs-theme="dark">
   <div class="container-fluid">
     <a class="navbar-brand" href="#">
-     
+      
      <img src="/pwiib/imagens/bootstrap-logo.svg" alt="Bootstrap" width="30" height="24" />
       Projeto PW 2 Turma B
   </a>
@@ -68,38 +42,3 @@ a {
     </div>
   </div>
 </nav>
- 
-<div class="container">
- 
-<div class="row">
-    <div class="col-md-6 offset-md-3">
- 
-        <div class="card mt-3 ">
- 
-            <form class="card-body cardbody-color rounded-3 p-lg-5" method="post" action="/Login/Entrar/">
- 
-                <div class="text-center">
-                    <img src="/pwiib/imagens/login.png" class="img-fluid my-4 bg-white p-3 rounded-3" alt="profile">
-                </div>
-                <div class="mb-3 mt-3">
-                    <input type="text" class="form-control" name="Login" id="Login" required aria-describedby="Login" placeholder="Digite seu login">
-                </div>
-                <div class="mb-3 mt-3">
-                    <input type="password" class="form-control" id="Senha" name="Senha" required placeholder="Digite sua senha">
-                </div>
-                <div class="text-center"><button type="submit" class="btn btn-color px-5 mb-5 w-100" style="background-color:#F7A81B">Entrar</button></div>
-                <input type="hidden" name="ReturnUrl" value="/" />
-                <div id="mensagem" class="form-text text-center mb-5 text-dark">
-                   
-                </div>
-            </form>
-        </div>
- 
-    </div>
-</div>
-</div>
- 
- 
-<script src="bootstrap.bundle.min.js"></script>
-</body>
-</html>
