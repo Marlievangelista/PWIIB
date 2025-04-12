@@ -36,7 +36,11 @@
             <li><a class="dropdown-item" href="array.php">Array/Vetor</a></li>
           </ul>
         </li>
-       
+        <li class="nav-item">
+        <a class ="nav-link" herf="instalar.php">
+        Instalar o banco
+</a>
+</ul> < ! -- FIM DO MENU -->
       </ul>
      
     </div>

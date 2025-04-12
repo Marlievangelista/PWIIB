@@ -20,13 +20,13 @@
     object-fit: cover;
 }
 body {
-    background-color: #98FB98;
+    background-color: #3CB371;
 }
  
  
 .cardbody-color {
     /*background-color: #ebf2fa;*/
-    background-color:#7B68EE;
+    background-color:#1E90FF;
 
 }
  
@@ -87,7 +87,7 @@ a {
                 <div class="mb-3 mt-3">
                     <input type="password" class="form-control" id="Senha" name="Senha" required placeholder="Digite sua senha">
                 </div>
-                <div class="text-center"><button type="submit" class="btn btn-color px-5 mb-5 w-100" style="background-color:#F7A81B">Entrar</button></div>
+                <div class="text-center"><button type="submit" class="btn btn-color px-5 mb-5 w-100" style="background-color:	#006400">Entrar</button></div>
                 <input type="hidden" name="ReturnUrl" value="/" />
                 <div id="mensagem" class="form-text text-center mb-5 text-dark">
                    
