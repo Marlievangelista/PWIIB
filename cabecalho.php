@@ -37,7 +37,7 @@
           </ul>
         </li>
         <li class="nav-item">
-        <a class ="nav-link" herf="instalar.php">
+        <a class ="nav-link" href="instalar.php">
         Instalar o banco
 </a>
 </ul> < ! -- FIM DO MENU -->
@@ -46,3 +46,5 @@
     </div>
   </div>
 </nav>
+<div class="container">
+  
