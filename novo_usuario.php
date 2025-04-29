@@ -16,7 +16,7 @@ include "conexao.php";
 
             <br/>
 
-            <input type="checkbox"name="ativo" value ="true" />
+            <input type="checkbox"name="ativo" value ="1" />
             usuario ativo 
 
             <br/>

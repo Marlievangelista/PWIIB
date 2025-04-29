@@ -1,5 +1,6 @@
 
 <?php
+
 class UsuarioRepository {
     private $conexao;
 
@@ -19,22 +20,22 @@ class UsuarioRepository {
         return $usuarios;
     }
 
+   
     public function buscarPorId($id) {
         $stmt = $this->conexao->prepare(
             "SELECT * FROM usuarios WHERE id = ?");
-        $stmt->bind_param("i", $id);
-        $stmt->execute();
 
         $resultado = $stmt->get_result();
         return $resultado->fetch_assoc();
-        {
-        public function Insert ($ login $senha,$ ativo)
-        $ sql =" INSERT INTO usuarios (Login,Senha,Ativo)
-        VALUES (?,?,?);";
-        $stmt = $this-> conexao-> prepare($sql);
-        $stmt->bind_param("ssb",$Login,$Senha,$Ativo);
-        $stmt->execute();
-
-        }
+    }
+    public function Inserir($login, $senha, $ativo)
+    {
+        echo $ativo;
+        
+        $sql = "INSERT INTO usuarios (LOGIN, SENHA, ATIVO) 
+                VALUES (?, ?, ?);";
+                $stmt = $this->conexao->prepare($sql);
+                $stmt->bind_param("ssi", $login,$senha,$ativo);
+                $stmt->execute();
     }
 }
