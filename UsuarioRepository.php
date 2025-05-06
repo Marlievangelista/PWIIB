@@ -1,7 +1,8 @@
 
 <?php
 
-class UsuarioRepository {
+class UsuarioRepository 
+{
     private $conexao;
 
     public function __construct(mysqli $conexao)
@@ -24,7 +25,8 @@ class UsuarioRepository {
     public function buscarPorId($id) {
         $stmt = $this->conexao->prepare(
             "SELECT * FROM usuarios WHERE id = ?");
-
+            $stmt->bind_param("i", $id);
+            $stmt->execute();
         $resultado = $stmt->get_result();
         return $resultado->fetch_assoc();
     }
@@ -37,5 +39,17 @@ class UsuarioRepository {
                 $stmt = $this->conexao->prepare($sql);
                 $stmt->bind_param("ssi", $login,$senha,$ativo);
                 $stmt->execute();
+
+                
     }
+
+
+    public function excluirUsuario($id)
+    {
+        $sql ="DELETE FROM usuarios where id = ?";
+        $preparar =$this->conexao->prepare($sql);
+        $preparar ->bind_param("i",$id);
+        $preparar->execute();
+    }
+
 }

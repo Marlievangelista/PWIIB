@@ -55,10 +55,15 @@
                             // vindos do banco em formato de array chave valor
                             foreach ($usuarios as $user) {
                                 echo "<tr>
-                                        <td>$user[ID]</td>
-                                        <td>$user[LOGIN]</td>
-                                        <td>$user[ATIVO]</td>
-                                        <td></td> 
+                                        <td>".$user['ID']."</td>
+                                        <td>".$user['LOGIN']."</td>
+                                        <td>".$user['ATIVO']."</td>
+                                        <td>
+                                        <a class= 'btn btn-danger'
+                                        href='excluir_usuario.php?id=".$user['ID']."'> Excluir</a>
+                                        <a class='btn-btn-warning'
+                                        href='editar_usuario.php?id=".$user['ID']."'> Editar</a>
+                                        </td> 
                                       </tr>";
                             }
                         ?>
