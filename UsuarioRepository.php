@@ -50,6 +50,15 @@ class UsuarioRepository
         $preparar =$this->conexao->prepare($sql);
         $preparar ->bind_param("i",$id);
         $preparar->execute();
+
+    }
+
+    public function Editar($login, $id, $ativo)
+    {
+        $sql = "UPDATE usuarios set Login=?,Ativo=? where ID=?"; 
+                $stmt = $this->conexao->prepare($sql);
+                $stmt->bind_param("ssi", $login,$ativo,$id);
+                $stmt->execute();
     }
 
 }
