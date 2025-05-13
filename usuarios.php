@@ -9,10 +9,18 @@
     //E recebe a conexão como parametro
     $repo = new UsuarioRepository($conexao);
 
-    //Chamei o metodo BuscarTodos para puxar 
-    // todos usuarios do banco de dados
+    
     $usuarios = $repo->buscarTodos();
-
+    if(isset($_GET['busca'])&& ! empty($_GET['busca']) )
+    {
+        $usuarios = $repo->pesquisar($_GET['busca']);
+    }
+     else
+     {
+          //Chamei o metodo BuscarTodos para puxar 
+          // todos usuarios do banco de dados
+          $usuarios = $repo->buscarTodos();  
+     }
     
 
 ?>
@@ -24,7 +32,10 @@
                 <b>Lista de usuários</b>
             </div>
             <div class="card-body">
+                  <form action="usuarios.php"method="get">
               <div class="row">
+                 
+                  
                     <div class="col-4">
                         <a href="novo_usuario.php" class="btn btn-success">
                             Novo usuário
@@ -39,6 +50,7 @@
                         </button>
                     </div>
               </div>
+            </form>
               <div class="row">
                 <table class="table table-striped table-hover">
                     <thead>

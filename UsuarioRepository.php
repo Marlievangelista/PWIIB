@@ -15,14 +15,30 @@ class UsuarioRepository
             "SELECT * FROM usuarios");
 
         $usuarios = [];
-        while ($row = $result->fetch_assoc()) {
+        while ($row = $result->fetch_assoc()) 
+        {
             array_push($usuarios, $row);
         }
         return $usuarios;
+        
+    }
+        
+    public function pesquisar($buscar) {
+                $sql ="SELECT * FROM usuarios WHERE LOGIN like '%$buscar%'" ;
+        $resultado = $this-> conexao->query($sql);
+        $usuarios =[];
+        while ($row = $resultado->fetch_assoc()) {
+            array_push($usuarios, $row);
+        }
+        return $usuarios;
+
+
     }
 
    
-    public function buscarPorId($id) {
+    public function buscarPorId($id) 
+    
+    {
         $stmt = $this->conexao->prepare(
             "SELECT * FROM usuarios WHERE id = ?");
             $stmt->bind_param("i", $id);
